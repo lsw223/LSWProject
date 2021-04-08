@@ -3,5 +3,9 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lsw.mappers.testMapper">
-   
+	<select id="selectUser" resultType="com.lsw.project.vo.UserVO">
+		select id
+			 , pass
+		  from lswuser
+	</select>
 </mapper>

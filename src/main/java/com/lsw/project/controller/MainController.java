@@ -1,4 +1,4 @@
-package com.lsw.project;
+package com.lsw.project.controller;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -31,13 +31,5 @@ public class MainController {
 		
 		return "/test/main.do";
 	}
-	
-	@RequestMapping(value = "/loginView.do", method = RequestMethod.GET)
-	public String loginView() {
-		logger.info("loginView");
-		return "loginView";
-	}
-	
-	@RequestMapping(value = /login.do)
 	
 }
